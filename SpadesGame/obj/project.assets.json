@@ -305,19 +305,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\babel\\.nuget\\packages\\": {}
+    "C:\\Users\\Fabinho\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\babel\\Documents\\IBT College\\Module_5\\Spades\\VS\\SpadesGame\\SpadesGame\\SpadesGame.csproj",
+      "projectUniqueName": "C:\\Users\\Fabinho\\Documents\\GitHub\\IBT\\SpadesGame\\SpadesGame\\SpadesGame.csproj",
       "projectName": "SpadesGame",
-      "projectPath": "C:\\Users\\babel\\Documents\\IBT College\\Module_5\\Spades\\VS\\SpadesGame\\SpadesGame\\SpadesGame.csproj",
-      "packagesPath": "C:\\Users\\babel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\babel\\Documents\\IBT College\\Module_5\\Spades\\VS\\SpadesGame\\SpadesGame\\obj\\",
+      "projectPath": "C:\\Users\\Fabinho\\Documents\\GitHub\\IBT\\SpadesGame\\SpadesGame\\SpadesGame.csproj",
+      "packagesPath": "C:\\Users\\Fabinho\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Fabinho\\Documents\\GitHub\\IBT\\SpadesGame\\SpadesGame\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\babel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Fabinho\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -364,7 +368,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

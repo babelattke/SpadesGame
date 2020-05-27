@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "o5wtBUk1E8L+d+eT6bIrj8dSc7MqFgTtcHCpk6wchOu494kv3qWspu86Bf+hXTHgPb05AAF9Nbe4/BKG0/4lig==",
+  "dgSpecHash": "/LFfEWDzV5yZRAgMPo9tezG/kTTv1eTS1b3677vrMKXl0UJyKUznsp8YXAv8KD65vpTky46sbKIZxIad2JB1UA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\babel\\Documents\\IBT College\\Module_5\\Spades\\VS\\SpadesGame\\SpadesGame\\SpadesGame.csproj",
+  "projectFilePath": "C:\\Users\\Fabinho\\Documents\\GitHub\\IBT\\SpadesGame\\SpadesGame\\SpadesGame.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\babel\\.nuget\\packages\\bootstrap\\4.5.0\\bootstrap.4.5.0.nupkg.sha512",
-    "C:\\Users\\babel\\.nuget\\packages\\jquery\\3.0.0\\jquery.3.0.0.nupkg.sha512",
-    "C:\\Users\\babel\\.nuget\\packages\\popper.js\\1.16.0\\popper.js.1.16.0.nupkg.sha512"
+    "C:\\Users\\Fabinho\\.nuget\\packages\\bootstrap\\4.5.0\\bootstrap.4.5.0.nupkg.sha512",
+    "C:\\Users\\Fabinho\\.nuget\\packages\\jquery\\3.0.0\\jquery.3.0.0.nupkg.sha512",
+    "C:\\Users\\Fabinho\\.nuget\\packages\\popper.js\\1.16.0\\popper.js.1.16.0.nupkg.sha512"
   ],
   "logs": []
 }
