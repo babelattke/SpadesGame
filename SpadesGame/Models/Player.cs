@@ -10,6 +10,7 @@ namespace SpadesGame.Models
         public int IdPlayer { get; set; }
         public string NamePlayer { get; set; }
         public List<Card> Hand = new List<Card>();
+        public int points;
 
         public Player() { }
     }
