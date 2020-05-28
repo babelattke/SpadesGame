@@ -9,6 +9,7 @@ namespace SpadesGame.Models
     {
         public List<Card> Shuffled = new List<Card>();
         public List<Player> Players = new List<Player>();
+        public List<Card> Turn = new List<Card>();
 
         //Constructor already start with shuffle cards
         public Game()
@@ -74,6 +75,11 @@ namespace SpadesGame.Models
             return -1;
         }
 
+        public void AddCardToTurn(Card currentCard)
+        {
+            Turn.Add(currentCard);
+        }
+
         public Card WhichCardWonTheTurn(List<Card> turn)
         {
             Card auxCard = new Card();
@@ -94,6 +100,21 @@ namespace SpadesGame.Models
                 }
             }
             return greaterCard;
+        }
+
+        public Player WhoPlayerWonTheTurn(Card winnerCard)
+        {
+            return Players.Where(x => x.Hand.Any(y => y.IdCard == winnerCard.IdCard)).FirstOrDefault();
+        }
+
+        public void RemoveCardsFromPlayer()
+        {
+            foreach (var card in Turn)
+            {
+                Player p = Players.Where(x => x.Hand.Any(y => y.IdCard == card.IdCard)).FirstOrDefault();
+                Players.Find(x => x.IdPlayer == p.IdPlayer).Hand.RemoveAll(y => y.IdCard == card.IdCard);
+            }
+            Console.WriteLine();
         }
     }
 }
