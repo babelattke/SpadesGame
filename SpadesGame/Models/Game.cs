@@ -9,19 +9,12 @@ namespace SpadesGame.Models
     {
         public List<Card> Shuffled = new List<Card>();
         public List<Player> Players = new List<Player>();
+        public List<Card> Turn = new List<Card>();
 
         //Constructor already start with shuffle cards
         public Game()
         {
             Shuffled = new Deck().Shuffle();
-        }
-
-        public Game StartGame(string namePlayerHuman)
-        {
-            Game newGame = new Game();
-            newGame.Players = SetPlayers(namePlayerHuman);
-            newGame.DealCardsToPlayers(newGame.Shuffled);
-            return newGame;
         }
 
         //Create player to the game
@@ -74,6 +67,11 @@ namespace SpadesGame.Models
             return -1;
         }
 
+        public void AddCardToTurn(Card currentCard)
+        {
+            Turn.Add(currentCard);
+        }
+
         public Card WhichCardWonTheTurn(List<Card> turn)
         {
             Card auxCard = new Card();
@@ -95,5 +93,64 @@ namespace SpadesGame.Models
             }
             return greaterCard;
         }
+
+        public Player WhoPlayerWonTheTurn(Card winnerCard)
+        {
+            var player = Players.Where(x => x.Hand.Any(y => y.IdCard == winnerCard.IdCard)).FirstOrDefault();
+            player.points += 10;
+            return player;
+        }
+
+        public void RemoveCardFromPlayer()
+        {
+            foreach (var card in Turn)
+            {
+                Player p = Players.Where(x => x.Hand.Any(y => y.IdCard == card.IdCard)).FirstOrDefault();
+                Players.Find(x => x.IdPlayer == p.IdPlayer).Hand.RemoveAll(y => y.IdCard == card.IdCard);
+            }
+            Console.WriteLine();
+        }
+
+        public Card SelectingCard(int idPlayer, List<Card> turn)
+        {
+            Card result = new Card();
+            var hand = Players.Where(x => x.IdPlayer == idPlayer).FirstOrDefault().Hand;
+            Card firstCardPlayed = new Card();
+            if (turn.Count == 0)
+            {
+                result = hand.OrderByDescending(x => x.valueCard).FirstOrDefault();
+                return result;
+            }
+            else
+            {
+                //fisrt check if the turn has Spade
+                if (turn.Any(x => x.Suit == "Spades"))
+                {
+                    int val = turn.Where(x => x.Suit == "Spades").Max(x => x.valueCard);
+                    foreach (var c in hand.Where(x => x.Suit == "Spades"))
+                    {
+                        if (c.valueCard > val)
+                        {
+                            return c;
+                        }
+                    }
+                }
+                else
+                {
+                    firstCardPlayed = turn.FirstOrDefault();
+                    foreach (var c in hand.Where(x => x.Suit == firstCardPlayed.Suit))
+                    {
+                        if (c.valueCard > firstCardPlayed.valueCard)
+                        {
+                            return c;
+                        }
+                    }
+                }
+                //Return the smallest Card
+                result = hand.OrderBy(x => x.valueCard).FirstOrDefault();
+                return result;
+            }
+        }
+
     }
 }
