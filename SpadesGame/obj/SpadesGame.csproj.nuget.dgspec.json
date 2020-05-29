@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fabinho\\Documents\\GitHub\\IBT\\SpadesGame\\SpadesGame\\SpadesGame.csproj": {}
+    "C:\\Users\\babel\\Documents\\IBT College\\Module_5\\Spades\\VS\\SpadesGame\\SpadesGame\\SpadesGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fabinho\\Documents\\GitHub\\IBT\\SpadesGame\\SpadesGame\\SpadesGame.csproj": {
+    "C:\\Users\\babel\\Documents\\IBT College\\Module_5\\Spades\\VS\\SpadesGame\\SpadesGame\\SpadesGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fabinho\\Documents\\GitHub\\IBT\\SpadesGame\\SpadesGame\\SpadesGame.csproj",
+        "projectUniqueName": "C:\\Users\\babel\\Documents\\IBT College\\Module_5\\Spades\\VS\\SpadesGame\\SpadesGame\\SpadesGame.csproj",
         "projectName": "SpadesGame",
-        "projectPath": "C:\\Users\\Fabinho\\Documents\\GitHub\\IBT\\SpadesGame\\SpadesGame\\SpadesGame.csproj",
-        "packagesPath": "C:\\Users\\Fabinho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fabinho\\Documents\\GitHub\\IBT\\SpadesGame\\SpadesGame\\obj\\",
+        "projectPath": "C:\\Users\\babel\\Documents\\IBT College\\Module_5\\Spades\\VS\\SpadesGame\\SpadesGame\\SpadesGame.csproj",
+        "packagesPath": "C:\\Users\\babel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\babel\\Documents\\IBT College\\Module_5\\Spades\\VS\\SpadesGame\\SpadesGame\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Fabinho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\babel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
             "bootstrap": {
               "target": "Package",
               "version": "[4.5.0, )"
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
