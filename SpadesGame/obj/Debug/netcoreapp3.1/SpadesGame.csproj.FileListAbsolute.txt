@@ -109,3 +109,7 @@ C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\bi
 C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\SpadesGame.csproj.CoreCompileInputs.cache
 C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\SpadesGame.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\Razor\Views\mainLog.cshtml.g.cs
+C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\Razor\Views\scoreBoard.cshtml.g.cs
+C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\Razor\Views\newGame.cshtml.g.cs
+C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\Razor\Views\Settings.cshtml.g.cs
+C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\Razor\Views\BidModal.cshtml.g.cs

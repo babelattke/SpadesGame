@@ -8,65 +8,18 @@
     <div class="col-3">
         @Html.Partial("~/Views/mainLog.cshtml")
     </div>
-    <div class="col-7">        
+    <div class="col-7">
         <div id="mainboard">
-            <img src="~/img/main_img.png" alt="Alternate Text" />
-            <button type="button" class="btn btn-info new-game-btn">New Game</button>
-            <i class="fas fa-cog user-settings"></i>
+            @Html.Partial("~/Views/newGame.cshtml")
+            <img src="~/img/main_img.png" alt="Alternate Text" id="imgLogo" />
+            <button id="deal" type="button" class="btn btn-info new-game-btn" data-toggle="modal" data-target="#bidModal">New Game</button>
+            <i class="fas fa-cog user-settings" data-toggle="modal" data-target="#settings"></i>
         </div>
     </div>
     <div class="col-2">
-        <div class="card prod-p-card card-red ">
-            <div class="card-body">
-                <div class="row align-items-center m-b-30">
-                    <div class="col">
-                        <h6 class="m-b-5 text-white">Bot 1</h6>
-                        <h3 class="m-b-0 f-w-700 text-white">183</h3>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-user text-c-red f-18"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card prod-p-card card-blue">
-            <div class="card-body">
-                <div class="row align-items-center m-b-30">
-                    <div class="col">
-                        <h6 class="m-b-5 text-white">Bot 2</h6>
-                        <h3 class="m-b-0 f-w-700 text-white">80</h3>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-user text-c-blue f-18"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card prod-p-card card-green">
-            <div class="card-body">
-                <div class="row align-items-center m-b-30">
-                    <div class="col">
-                        <h6 class="m-b-5 text-white">Bot 3</h6>
-                        <h3 class="m-b-0 f-w-700 text-white">113</h3>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-user text-c-green f-18"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card prod-p-card card-yellow">
-            <div class="card-body">
-                <div class="row align-items-center m-b-30">
-                    <div class="col">
-                        <h6 class="m-b-5 text-white">Player</h6>
-                        <h3 class="m-b-0 f-w-700 text-white">130</h3>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-user text-c-yellow f-18"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @Html.Partial("~/Views/scoreBoard.cshtml")
     </div>
 </div>
+
+@Html.Partial("~/Views/Settings.cshtml")
+@Html.Partial("~/Views/BidModal.cshtml")
