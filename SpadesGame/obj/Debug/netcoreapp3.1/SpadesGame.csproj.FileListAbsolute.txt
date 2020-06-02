@@ -113,3 +113,5 @@ C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\ob
 C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\Razor\Views\newGame.cshtml.g.cs
 C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\Razor\Views\Settings.cshtml.g.cs
 C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\Razor\Views\BidModal.cshtml.g.cs
+C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\Razor\Views\About.cshtml.g.cs
+C:\Users\babel\Documents\IBT College\Module_5\Spades\VS\SpadesGame\SpadesGame\obj\Debug\netcoreapp3.1\Razor\Views\HowToPlay.cshtml.g.cs

@@ -9,7 +9,7 @@ var cards = (function() {
     },
     animationSpeed: 500,
     table: 'body',
-    cardback: 'red',
+    cardback: 'blue',
     acesHigh: false,
     cardsUrl: 'img/cards.png',
     blackJoker: false,

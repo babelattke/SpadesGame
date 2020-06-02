@@ -24,7 +24,8 @@ $('#deal').click(function () {
 	$('#deal').hide();
 	$('#imgLogo').hide();	
 	document.getElementById("newGame").classList.remove("invisible");
-	deck.deal(13, [bot1, bot2, bot3, player], 50, function () {		
+	deck.deal(13, [bot1, bot2, bot3, player], 50, function () {	
+		console.log("here: ");
 		discardPile.addCard(deck.topCard());
 		discardPile.render();
 	});
